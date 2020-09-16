@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import BaseCalc from './components/BaseCalc'
+import {createStore} from 'redux';
+import historyReducer from './reducers/calculations'; // REDUCER
+import { Provider } from 'react-redux';
+import CalcHistory from './components/CalcHistory';
+import Nav from './components/Nav';
+import HomePage from './components/Home';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+
+const store = createStore(
+  historyReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // Enabling Browser Redux Extension
+)
+
+store.subscribe(() => console.log(store.getState()));
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <Router>
+      <Nav />
+      <Route path='/' component={HomePage} exact />
+      <Route path='/history' component={CalcHistory}/>
+      <Route path='/calculator' component={BaseCalc} />
+    </Router>
+  </Provider>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
