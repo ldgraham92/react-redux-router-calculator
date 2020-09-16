@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React-Redux Assignment - Calculator
 
-## Available Scripts
+## Introduction
+- This assignment is meant to challenge your knowledge of state, prop and element rendering in React while also using a store in redux to store information. React is currently one of the most popular and sought after front end technology at the moment, and having skills with it will greatly increase your employability. Redux is often used as a companion to React, and is favoured for storing (global) information over using local component state. 
 
-In the project directory, you can run:
+## Requirements
+### From "React Practice-Calculator with Prop"
+- Use “npx create-react-app” to start a new React project.
+- Create a “Calculator” component.
+- Use a prop to output a unique heading for the component.
+- Include two input fields that can take in numeric values, in your component return.
+- Create a select (drop down box) which allows the user to choose what operation to apply to the two numeric fields, in your component return.
+    - Your operations must include addition, subtraction, multiplication, and division.
 
-### `npm start`
+### From "React Assignment - Calculator"
+- Use state to keep track of the entered input values and current select value.
+- Output to the user the result of the calculation onSubmit or onClick.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### From "React-Redux Assignment - Calculator"
+- Store and output a list of prior calculations the user has done in and from React-Redux store.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### New for "React-Redux-Router Practice - Calculator"
+- Use React Router to have a page for the calculator and a page for prior calculations (via Routes.)
 
-### `npm test`
+## Challenges
+- Make it look nice with some CSS!
+- Protect data input - return a message to the user if the user inputs a non-numeric character / request.
+- Have a single input field which can read the operations.
+- Have the output list display in a different component than the Calculator component, illustrating one of the strengths of Redux as a global state management tool.
+- Add a “light / dark mode” feature that is kept track of using a Redux store.
+- New for 'React-Redux-Router Practice - Calculator'
+    - Make it look nice with some CSS!
+    - Add a real “home” page with some information about your assignment.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Trello
+- https://trello.com/b/OIkJsTAb/react-basic-calculator
+    - I have used the same Trello board as previous three assignments however added new cards to the To Do list.
 
-### `npm run build`
+## Citations:
+- Img Onclick w/ React Using 'requires'
+    - https://stackoverflow.com/questions/34582405/react-wont-load-local-images
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Trash Icon
+    - https://www.shareicon.net/trash-852498
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Horizontal Nav Bar:
+    - https://www.w3schools.com/css/css_navbar_horizontal.asp
+        - I've used this Nav Bar style multiple times and like it for its simplicity
